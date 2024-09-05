@@ -1,9 +1,12 @@
-<!DOCTYPE html>
-<head>
-    <script src="index.js"></script>
-</head>
-<!-- please ignore my spagetti code. i swear im trying T_T -->
-<body>
-    <p>MAKE SURE TO ENABLE POP UPS OR IT WILL NOT WORK.</p>
-    <button onclick="cloak()" id="fullscreen-btn">Start</button>
-</body>
+<!DOCTYPE html> 
+<html>
+     <head>
+         <meta charset="UTF-8"> <title>Fullscreen Example</title> <style> button { font-size: 20px; padding: 10px; border-radius: 5px; background-color: #986cdc; color: white; border: none; cursor: pointer; } </style> 
+        </head> 
+        
+        <body> 
+            <label for="urlin">URL:</label>
+            <input type="text" id="urlin" name="urlin"><br><br>
+            <button id="fullscreen-btn">FULLSCREEN</button> <script> var url = document.getElementById("urlin").value; var fullscreenBtn = document.getElementById("fullscreen-btn"); fullscreenBtn.addEventListener("click", function() { var elem = document.documentElement; if (elem.requestFullscreen) { elem.requestFullscreen(); } else if (elem.webkitRequestFullscreen) { /* Safari */ elem.webkitRequestFullscreen(); } else if (elem.msRequestFullscreen) { /* IE11 */ elem.msRequestFullscreen(); } window.open(url, "_blank"); }); </script> 
+        </body> 
+</html>
