@@ -3,7 +3,6 @@
 function cloak() {
     url = prompt("Please enter the URL.")
     var win = window.open('about:blank') // <-- include the URL 
-    url = prompt("Please enter the URL.")
     var iframe = win.document.createElement('iframe')
     iframe.style.width = "100%";
     iframe.style.height = "100%";
